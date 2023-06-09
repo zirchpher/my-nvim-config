@@ -21,6 +21,7 @@ map('n', '<C-s>', '<cmd>write<cr>', {desc = 'Guardar archivo'})
 map('i', 'jk', '<ESC>', {desc = 'Salir del modo insert'})
 map({'n', 'x'}, 'x', '"_x', {desc = 'cuando borremos un caracter usando la tecla x, no se copiará al clipboard'})
 map('n', '<C-a>', ':keepjumps normal! ggVG<CR>', {desc = "Seleccionamos todo el texto"})
+map('', "<ESC>", ":nohl<CR>", {desc = 'elimina el resaltados de palabra después de hacer una búsqueda'})
 
 -------------------------------
 -- Atajos de Plugins

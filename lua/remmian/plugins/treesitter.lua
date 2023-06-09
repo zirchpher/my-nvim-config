@@ -12,6 +12,15 @@ ts.setup {
     disable = {},
   },
   
+  autotag = {
+    enable = true,
+  },
+  
+  context_commentstring = {
+    enable         = true,
+    enable_autocmd = false,
+  },
+  
   textobjects = {
     select = {
       enable = true,
@@ -26,37 +35,24 @@ ts.setup {
   },
 
   ensure_installed = {
-    -- neovim stuff
-    "lua",
+    -- neovin stuff
     "vim",
-    "vimdoc",
-
-    -- fullstack stuff
+    "lua",
+    -- web dev stuff
     "html",
     "css",
-    "scss",
-    "sql",
     "javascript",
     "typescript",
-    'tsx',
-    "json",
-    "yaml",
+    "tsx",
     "markdown",
     "markdown_inline",
+    "json",
+    "yaml",
+    -- "dockerfile",
     "gitignore",
-    "dockerfile",
-    
-    -- WM stuff
-    "sxhkdrc",
+    -- linux stuff
     "bash",
   },
-  autotag = {
-    enable = true,
-  },
-  context_commentstring = {
-    enable         = true,
-    enable_autocmd = false,
-  }
 }
 
 local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
