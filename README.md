@@ -1,1 +1,3 @@
-# my-nvim-config
+# Requirement
+
+- cmake | telescope & import_cost

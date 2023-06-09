@@ -67,3 +67,4 @@ tags
 [._]*.un~
 
 lazy-lock.json
+.git/
